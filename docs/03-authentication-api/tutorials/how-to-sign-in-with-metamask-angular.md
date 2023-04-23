@@ -411,7 +411,14 @@ const client = createClient({
 
 
 
-3. Replace our empty `handleAuth()` function with the following:
+3. Initialise a router variable in the SigninComponent constructor
+
+`constructor(private router:Router) { }
+
+
+
+
+4. Replace our empty `handleAuth()` function with the following:
 
 ```typescript
 async handleAuth() {
@@ -452,7 +459,7 @@ async handleAuth() {
 
 
 
-4. Open `src/app/user/user.component.ts`. Add our required imports:
+5. Open `src/app/user/user.component.ts`. Add our required imports:
 
 ```typescript
 import { Router } from '@angular/router';
@@ -464,7 +471,7 @@ import { environment } from '../../environments/environment';
 
 
 
-5. Replace `ngOnInit(): void {}` with:
+6. Replace `ngOnInit(): void {}` with:
 
 ```typescript
 async ngOnInit() {
@@ -488,7 +495,7 @@ async ngOnInit() {
 
 
 
-6. Replace our empty `signOut()` function with the following:
+7. Replace our empty `signOut()` function with the following:
 
 ```typescript
 async signOut() {
